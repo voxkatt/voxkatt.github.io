@@ -96,13 +96,12 @@ a {
   text-decoration: none;
 }
 
-.brand::before {
-  content: "";
-  width: 0.55rem;
-  height: 0.55rem;
+.brand-avatar {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--accent-line);
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 14px var(--accent);
+  object-fit: cover;
 }
 
 .site-nav {
@@ -180,6 +179,28 @@ main {
 
 .hero p:last-child {
   margin-bottom: 0;
+}
+
+.hero--profile {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 1.75rem);
+}
+
+.hero-body {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.avatar {
+  flex: none;
+  width: 112px;
+  height: 112px;
+  border: 2px solid var(--accent-line);
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgb(99 255 79 / 8%);
+  object-fit: cover;
 }
 
 .hero p a {
@@ -512,6 +533,16 @@ main {
   .brand {
     font-size: 1rem;
     letter-spacing: 0.1em;
+  }
+
+  .brand-avatar {
+    width: 24px;
+    height: 24px;
+  }
+
+  .avatar {
+    width: 84px;
+    height: 84px;
   }
 
   .site-nav a {
