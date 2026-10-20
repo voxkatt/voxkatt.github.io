@@ -348,6 +348,10 @@ main {
   object-fit: contain;
 }
 
+.card-logo--wide img {
+  height: 88px;
+}
+
 .code-row {
   display: flex;
   align-items: center;
